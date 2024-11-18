@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/image1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+h1{
+    font-size: 60px;
+    float: left;
+}
+
+h2, h3{
+    float: right;
+}
+
+.navbar{
+    border: 2px solid white;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}

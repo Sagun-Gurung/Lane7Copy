@@ -1,40 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+body {
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/image1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/image2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-h1, h2, h3{
+/* header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/image2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+} */
+
+h1,
+.book-link,
+.en-link,
+a {
     font-family: sans-serif;
     font-style: italic;
     font-weight: bold;
     color: white;
     cursor: pointer;
-    padding-top: 20px;
-    padding-left: 30px;
+    text-decoration: none;
 }
 
-h1{
-    font-size: 60px;
-    float: left;
-}
-
-h2, h3{
-    float: right;
-}
-
-.navbar{
+.navbar {
     border: 2px solid white;
+    height: 90px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
-.navbar::after{
+
+/* .right-links {
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: end;
+    gap: 25px;
+    background-color: black;
+    margin-right: 40px;
+    list-style-type: none;
+} */
+
+.navbar::after {
     content: '';
     display: block;
     clear: both;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.book-link,
+.en-link {
+    font-size: 30px;
+}
+
+/* Style the main list */
+.right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style for individual list items */
+.right-links li {
+    position: relative;
+    /* Required for positioning the dropdown */
+    padding: 10px;
+}
+
+/* Style the dropdown menu */
+.dropdown {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    /* Position dropdown below the parent list item */
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for dropdown list items */
+.dropdown li {
+    padding: 8px;
+}
+
+/* Style links inside dropdown */
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Show dropdown when hovering over the parent li */
+.en-link:hover .dropdown {
+    display: block;
 }

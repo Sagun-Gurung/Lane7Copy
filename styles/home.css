@@ -53,3 +53,9 @@ ul li {
   list-style: none;
   float: right;
 }
+
+.book-link,
+.en-link,
+.dropdown {
+  display: inline-block;
+}

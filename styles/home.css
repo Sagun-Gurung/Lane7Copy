@@ -42,6 +42,9 @@ a {
 .header .navbar .logo {
   font-size: 5.3rem;
   float: left;
+  margin-top: 0.4em;
+  margin-left: 0.5em;
+  /* 0.5*53(5.3rem) = relative to it's parent's font-size */
 }
 
 ul li {

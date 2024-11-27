@@ -25,9 +25,11 @@ ul li {
 
 img {
   display: inline-block;
-  height: 1.5rem;
+  height: 1.9rem;
   width: 1.5rem;
   transform: skew(-10deg);
+  /* this skews the image by 10 degrees along the X-axis.  */
+  cursor: pointer;
 }
 
 /*  *************utility class************* */

@@ -40,25 +40,36 @@ a {
 }
 
 .header .navbar .logo {
-  font-size: 5.3rem;
+  font-size: 5rem;
   float: left;
   margin-top: 0.4em;
-  margin-left: 0.5em;
+  margin-left: 0.2em;
   /* 0.5*53(5.3rem) = relative to it's parent's font-size */
 }
+
+/*  ****right side of the header******** */
 
 ul li {
   list-style: none;
 }
 
 .right-links {
-  font-size: 3.3rem;
+  background-color: pink;
   list-style: none;
   float: right;
+  padding: 3em 2em;
 }
 
-.book-link,
-.en-link,
-.dropdown {
+.book-link {
+  font-size: 3rem;
+}
+
+.en-link {
+  font-size: 2rem;
+}
+
+/*  *************utility class************* */
+.nav-list {
   display: inline-block;
+  padding-right: 1em;
 }

@@ -13,6 +13,24 @@
   color: white;
 }
 
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*  *************utility class************* */
+.nav-list {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+/*  ********************************** Header *************************************** */
+
 .header {
   height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/image2.jpg');
@@ -33,12 +51,7 @@
   clear: both;
 }
 
-a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
-
+/*  left side of the navbar */
 .header .navbar .logo {
   font-size: 5rem;
   float: left;
@@ -47,11 +60,7 @@ a {
   /* 0.5*53(5.3rem) = relative to it's parent's font-size */
 }
 
-/*  ****right side of the header******** */
-
-ul li {
-  list-style: none;
-}
+/*  right side of the navbar  */
 
 .right-links {
   background-color: pink;
@@ -66,10 +75,4 @@ ul li {
 
 .en-link {
   font-size: 2rem;
-}
-
-/*  *************utility class************* */
-.nav-list {
-  display: inline-block;
-  padding-right: 1em;
 }

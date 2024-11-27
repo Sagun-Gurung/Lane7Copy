@@ -23,6 +23,13 @@ ul li {
   list-style: none;
 }
 
+img {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: skew(-10deg);
+}
+
 /*  *************utility class************* */
 .nav-list {
   display: inline-block;
@@ -64,7 +71,6 @@ ul li {
 
 .right-links {
   background-color: pink;
-  list-style: none;
   float: right;
   padding: 3em 2em;
 }

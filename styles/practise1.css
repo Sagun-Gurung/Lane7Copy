@@ -2,26 +2,19 @@
   box-sizing: border-box;
 }
 
-.fav-musicians {
-  border: 10px solid green;
+.container {
+  max-width: 1200px;
+  border: 2px solid red;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* using fr instead of percentage helps the items to remain inside the container(like a border-box) */
+  gap: 10px 40px;
 }
 
-.mozart {
-  border: 4px solid red;
-  width: 45%;
-  float: left;
-  background-color: red;
-}
-
-.beethoven {
-  width: 55%;
-  float: right;
-  background-color: yellow;
-}
-
-/* to clear the float */
-.fav-musicians::after {
-  content: '';
-  display: block;
-  clear: both;
+.item {
+  background: rgba(0, 0, 255, 0.61);
+  color: #ffff;
+  padding: 10px;
+  border: 2px solid black;
 }

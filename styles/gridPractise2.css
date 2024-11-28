@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  /* Base font size: 10px */
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Grid Layout */
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* Header, content, footer */
+  grid-template-columns: 1fr;
+  /* Single column */
+  /* min-height: 90vh; */
+  width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  /* overflow: hidden; */
+}
+
+/* Header Styling */
+.header {
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo a {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-list a {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ffd700;
+  text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.7);
+}
+
+/* Mid Section Styling */
+.mid-section {
+  padding: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Utility Classes */
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+  height: 1.9rem;
+  width: 1.5rem;
+  transform: skew(-10deg);
+  /* Skew the image by 10 degrees along the X-axis */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-rows: auto 1fr auto;
+    padding: 1rem;
+  }
+
+  .header .logo a {
+    font-size: 2rem;
+  }
+
+  .mid-section {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}

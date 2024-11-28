@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/image2.jpg');
 }
 
 :root {
@@ -12,11 +11,20 @@
   /* which is 10px, 16px = 100% */
   font-family: sans-serif;
   color: white;
+
+}
+
+body {
+  height: 100vh;
+  background-image: url('../images/image2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
   display: grid;
-
 }
 
 a {
@@ -47,15 +55,10 @@ img {
 
 .section {
   margin: 2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 /*  ********************************** Header *************************************** */
-
-.header {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .header .navbar {
   font-style: italic;
@@ -63,3 +66,10 @@ img {
 }
 
 /* #################### Mid Section ######################## */
+/* .mid-section {
+} */
+
+/* ######################### Footer ################################ */
+.footer {
+  background-color: black;
+}

@@ -7,9 +7,26 @@
   border: 2px solid red;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 150px);
   /* using fr instead of percentage helps the items to remain inside the container(like a border-box) */
-  gap: 10px 40px;
+  grid-auto-rows: 100px;
+  gap: 10px;
+
+  /* align-items: center;
+  justify-items: center; */
+
+  /* place-items: start start; */
+
+  /* align-content: center;
+  justify-content: center; */
+  /* place-content: center start; */
+
+}
+
+.item1 {
+  place-self: end end;
 }
 
 .item {

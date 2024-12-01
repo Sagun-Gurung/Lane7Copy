@@ -6,7 +6,6 @@
 
 :root {
   font-size: 62.5%;
-  /* which is 10px, 16px = 100% */
   font-family: sans-serif;
   color: white;
   font-style: italic;
@@ -44,6 +43,7 @@ img {
 h3 {
   font-size: 6rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -62,20 +62,67 @@ h4 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+.bg-black {
+  background-color: black;
+}
+
 /* ############################# Container ######################## */
 .container {
   display: grid;
-  /* grid-template-rows: 150px 1fr 300px; */
-  grid-template-rows: minmax(150px, auto) 1fr minmax(300px, auto);
+  grid-template-rows: minmax(150px, auto) minmax(600px, auto) minmax(300px, auto);
 }
 
 
 /*  ********************************** Header *************************************** */
-
 .header .navbar {
   font-style: italic;
   border: 4px solid white;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50;
+  width: 100%;
+  /* z-index: 0; */
 }
+
+/*  left side of the navbar */
+.header .navbar .logo {
+  font-size: 5rem;
+  padding-left: 0.2em;
+  padding-top: 0.5em;
+}
+
+/*  right side of the navbar  */
+.right-links {
+  display: flex;
+  padding: 2.8em 2.5em;
+  align-items: center;
+}
+
+.book-link {
+  font-size: 4rem;
+}
+
+.en-link {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* #################### Mid Section ######################## */
 .mid-section {
@@ -85,5 +132,16 @@ h4 {
 /* ######################### Footer ################################ */
 .footer {
   padding: 2rem;
-  background-color: black;
+}
+
+/* ########################### Responsive Layout ###################### */
+
+@media (max-width: 380px) {
+  .navbar {
+    flex-direction: column
+  }
+
+  /* .logo{
+    flex-shrink: ;
+  } */
 }

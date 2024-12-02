@@ -17,7 +17,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 a {
@@ -84,7 +84,6 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%;
-
   z-index: 10;
 }
 
@@ -134,36 +133,39 @@ h4 {
 
 /* ########################### Responsive Layout ###################### */
 
-
-@media (max-width: 500px) {
+/* logo size transitions */
+/* @media (max-width: 420px) {
   .header .navbar .logo {
-    font-size: 3.5rem;
+    font-size: 4.7rem;
     transition: font-size 0.8s ease-in;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .header .navbar .logo {
-    font-size: 3rem;
+    font-size: 4.3rem;
     transition: font-size 0.8s ease-in;
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 395px) {
   .header .navbar .logo {
-    font-size: 2.5rem;
+    font-size: 4rem;
     transition: font-size 0.8s ease-in;
   }
 }
 
-@media (max-width: 335px) {
+@media (max-width: 385px) {
   .header .navbar .logo {
-    font-size: 2.2rem;
+    font-size: 3.7rem;
     transition: font-size 0.8s ease-in;
-    /* Slowest transition */
-  }
+}
 }
 
+*/
+
+
+/* for the right links */
 @media (max-width: 760px) {
   .book-link {
     font-size: 3rem;

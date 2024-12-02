@@ -82,9 +82,10 @@ h4 {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 50;
+  top: 0;
   width: 100%;
-  /* z-index: 0; */
+
+  z-index: 10;
 }
 
 /*  left side of the navbar */
@@ -92,6 +93,11 @@ h4 {
   font-size: 5rem;
   padding-left: 0.2em;
   padding-top: 0.5em;
+
+  /* shrinking */
+  flex: 0 1 auto;
+  min-width: 20px;
+  transition: font-size 0.9s ease-in;
 }
 
 /*  right side of the navbar  */
@@ -99,6 +105,7 @@ h4 {
   display: flex;
   padding: 2.8em 2.5em;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .book-link {
@@ -108,15 +115,6 @@ h4 {
 .en-link {
   font-size: 2rem;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -136,12 +134,42 @@ h4 {
 
 /* ########################### Responsive Layout ###################### */
 
-@media (max-width: 380px) {
-  .navbar {
-    flex-direction: column
+
+@media (max-width: 500px) {
+  .header .navbar .logo {
+    font-size: 3.5rem;
+    transition: font-size 0.8s ease-in;
+  }
+}
+
+@media (max-width: 400px) {
+  .header .navbar .logo {
+    font-size: 3rem;
+    transition: font-size 0.8s ease-in;
+  }
+}
+
+@media (max-width: 355px) {
+  .header .navbar .logo {
+    font-size: 2.5rem;
+    transition: font-size 0.8s ease-in;
+  }
+}
+
+@media (max-width: 335px) {
+  .header .navbar .logo {
+    font-size: 2.2rem;
+    transition: font-size 0.8s ease-in;
+    /* Slowest transition */
+  }
+}
+
+@media (max-width: 760px) {
+  .book-link {
+    font-size: 3rem;
   }
 
-  /* .logo{
-    flex-shrink: ;
-  } */
+  .en-link {
+    font-size: 1.5rem;
+  }
 }

@@ -17,14 +17,14 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
 }
 
 a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); */
 }
 
 ul li {
@@ -80,7 +80,6 @@ h4 {
   background-color: blueviolet;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -89,22 +88,23 @@ h4 {
 
 /*  left side of the navbar */
 .header .navbar .logo {
+  /* font-size: calc(3vw + 2rem); */
   font-size: 5rem;
-  padding-left: 0.2em;
+  text-align: center;
   padding-top: 0.5em;
+  border: 2px solid blue;
+  flex-basis: 210px;
+  /* flex-shrink: 1; */
 
-  /* shrinking */
-  flex: 0 1 auto;
-  min-width: 20px;
-  transition: font-size 0.9s ease-in;
 }
 
 /*  right side of the navbar  */
 .right-links {
-  display: flex;
-  padding: 2.8em 2.5em;
-  align-items: center;
-  flex: 0 0 auto;
+  padding: 3em 2.7em;
+  border: 2px solid red;
+  /* flex-shrink: 0; */
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .book-link {
@@ -112,9 +112,28 @@ h4 {
 }
 
 .en-link {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  position: relative;
 }
 
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  padding: 0.5em;
+  z-index: 1;
+  border-radius: 0.1em;
+  margin-top: 0.2em;
+}
+
+.en-link:hover .dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover {
+  background-color: blue;
+}
 
 
 
@@ -167,11 +186,29 @@ h4 {
 
 /* for the right links */
 @media (max-width: 760px) {
+
+  .header .navbar .logo {
+    flex-shrink: 2;
+    /* font-size: 4rem; */
+    /* font-size: calc(1vw + 0.5rem); */
+  }
+
+  /* 
+  .right-links {
+    flex-shrink: 0;
+  } */
+
   .book-link {
     font-size: 3rem;
   }
 
   .en-link {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .navbar {
+    background-color: black;
   }
 }

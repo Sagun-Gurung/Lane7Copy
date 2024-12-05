@@ -1,0 +1,53 @@
+html {
+  background: black;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+  border-radius: 50%;
+  position: relative;
+  /* animation-name: move-circle;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in; 
+  */
+  /* slow start */
+  /* ease-in-out => slow start slow end */
+
+  /* you can use all above in one line i.e: */
+  animation: move-circle 5s forwards 2s 4 ease-in;
+}
+
+@keyframes move-circle {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: 300px;
+    background-color: aqua;
+  }
+
+  50% {
+    top: 300px;
+    left: 300px;
+    background-color: bisque;
+  }
+
+  75% {
+    top: 300px;
+    left: 0;
+    background-color: gray;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

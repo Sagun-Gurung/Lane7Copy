@@ -25,3 +25,26 @@
     background: yellow;
   }
 }
+
+/* ################ To make the Line Grow ###################### */
+
+.box2 {
+  height: 100px;
+  width: 50px;
+  background: darkblue;
+  /* border: 2px solid red; */
+  animation-name: grow-width;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+@keyframes grow-width {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

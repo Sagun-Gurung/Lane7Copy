@@ -1,0 +1,27 @@
+.box {
+  height: 100px;
+  width: 200px;
+  background: red;
+  animation-name: change-bg-color;
+  animation-duration: 5s;
+  /* how long does the animation takes */
+  animation-delay: 3s;
+  /* how many second before the animation to start */
+
+
+  animation-fill-mode: forwards;
+  /* the animation remains to it's latest changed color */
+
+  /* animation-iteration-count: 3; */
+  /* no of times the animation should run */
+}
+
+@keyframes change-bg-color {
+  from {
+    background: red;
+  }
+
+  to {
+    background: yellow;
+  }
+}

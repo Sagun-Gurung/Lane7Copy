@@ -1,0 +1,87 @@
+/* css transform property allows us to rotate, skew, scale, translate */
+.box {
+  height: 100px;
+  width: 100px;
+  font-size: 1.5rem;
+  background: lightblue;
+  margin: 100px auto;
+  /* rotate, skew, scale, translate */
+  transition: transform 1s ease-in-out;
+  /* transform: translateX(50px); */
+}
+
+.box:hover {
+  /* transform: rotate(20deg); */
+
+
+  /* transform: scaleX(2); */
+  /* expand the width 2 * width */
+
+  /* transform: scaleY(2); */
+  /* expand the height 2 * height */
+
+  /* transform: scale(2); */
+  /* for expand and decrease both height and width */
+
+  /* to move the object along X-axis */
+  /* transform: translateX(50px); */
+
+  /* transform: translate(100px, 50px); */
+  /* transform: translate(-100px, 50px); */
+  /* transform: translate(-100px, -50px); */
+
+
+  /* both */
+  /* transform: scale(1.2) translate(30px, 20px); */
+
+  /* transform: skew(-15deg, 15deg); */
+
+  transform: scale(1.2) translate(30px, 20px) skew(15deg, 10deg);
+
+
+  /* 
+    scale(1.2)
+      Effect: Enlarges the element by 20% (or 1.2 times its original size).
+      1.2 is the scaling factor.
+      A value greater than 1 increases the size.
+      A value less than 1 reduces the size.
+      This scaling affects both width and height equally because only one
+      parameter is provided (it defaults to uniform scaling).
+
+
+    translate(30px, 20px)
+        Effect: Moves the element by the specified distances.
+        30px: Moves the element 30 pixels to the right along the x-axis.
+        20px: Moves the element 20 pixels down along the y-axis.
+
+      In CSS, transformations are applied in the order they are written. For this code:
+
+      The element is scaled (enlarged by 20%).
+      The element is then moved (translated) 30px to the right and 20px down from its
+      new size and position.
+  */
+
+}
+
+/* 
+1. scale
+  Purpose: Resizes an element by scaling it up or down.
+  Effect: Changes the dimensions (width and height) of an element proportionally or non-proportionally.
+  Syntax:
+  css
+  Copy code
+  transform: scale(x, y);
+
+2.translate
+  Purpose: Moves an element from its original position without affecting its dimensions.
+  Effect: Changes the position of the element along the x-axis, y-axis, or both.
+  Syntax:
+  css
+  Copy code
+  transform: translate(x, y);
+
+  3.skew
+  transform: skew(x-angle, y-angle);
+
+  is used to tilt or slant an element along one or both axis
+*/
